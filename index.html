@@ -3,70 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEON BRAM | CYBERPUNK</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <title>Minimalist Excellence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="video-container">
-        <video autoplay muted loop playsinline class="video-bg">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-neon-lines-10041-large.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-    </div>
-
-    <header>
-        <h1 class="glitch" data-text="NEON BRAM">NEON BRAM</h1>
-        <p class="status-text">STATUS: SYSTEM_ACTIVE // 2026</p>
-    </header>
-
     <nav>
-        <a href="#home" class="nav-link">HOME</a>
-        <a href="#projects" class="nav-link">PROJECTS</a>
-        <a href="#crew" class="nav-link">CREW</a>
-        <a href="#contact" class="nav-link">CONTACT</a>
+        <div class="nav-container">
+            <div class="logo">VAULT</div>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="hero">
+    <header class="hero">
         <div class="hero-content">
-            <h2 class="neon-text">LEVEL UP MODE</h2>
-            <p>Välkommen till framtiden. Det här är inte en hemsida – det är en digital upplevelse.</p>
-            <button class="glow-btn">STARTA SYSTEM</button>
+            <span class="eyebrow">Established 2026</span>
+            <h1>The beauty of <br><span class="outline">precision.</span></h1>
+            <p>Vi skapar digitala upplevelser med fokus på funktion och tidlös estetik.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn-primary">Utforska projekt</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="grid-section" id="work">
+        <div class="section-header">
+            <h2>Selected Works</h2>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="image-placeholder"></div>
+                <div class="project-info">
+                    <h3>01. Digital Architecture</h3>
+                    <p>Konceptuell design</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="image-placeholder"></div>
+                <div class="project-info">
+                    <h3>02. Brand Identity</h3>
+                    <p>Visuell strategi</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main id="projects">
-        <div class="cards">
-            <div class="card">
-                <h3>⚡ NEON GLOW</h3>
-                <p>Intensiva färger och ljuseffekter som definierar cyberpunk-estetiken.</p>
-            </div>
-            <div class="card">
-                <h3>🎥 DYNAMIC</h3>
-                <p>Levande bakgrunder och mjuka övergångar för en modern känsla.</p>
-            </div>
-            <div class="card">
-                <h3>🔥 ENERGY</h3>
-                <p>Animationer som reagerar på din närvaro. Alltid i rörelse.</p>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 VAULT STUDIO. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
             </div>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 NEON BRAM — ALL GAS NO BRAKES</p>
     </footer>
 
     <script>
+        // Enkel fade-in effekt när man scrollar
+        const observerOptions = { threshold: 0.1 };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
+                    entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, observerOptions);
 
-        document.querySelectorAll('.card').forEach(card => observer.observe(card));
+        document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
     </script>
 </body>
 </html>
