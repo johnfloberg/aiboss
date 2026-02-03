@@ -3,78 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Excellence</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <title>Min Snygga Sida</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <div class="logo">VAULT</div>
-            <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <div class="logo">DESIGN<span>LAB</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Projekt</a></li>
+            <li><a href="#">Om mig</a></li>
+            <li><a href="#" class="btn-nav">Kontakt</a></li>
+        </ul>
     </nav>
 
-    <header class="hero">
+    <main class="hero">
         <div class="hero-content">
-            <span class="eyebrow">Established 2026</span>
-            <h1>The beauty of <br><span class="outline">precision.</span></h1>
-            <p>Vi skapar digitala upplevelser med fokus på funktion och tidlös estetik.</p>
-            <div class="hero-btns">
-                <a href="#" class="btn-primary">Utforska projekt</a>
+            <h1>Skapar framtidens <span>digitala</span> upplevelser.</h1>
+            <p>Minimalistisk design möter kraftfull kod. Jag bygger hemsidor som inte bara syns, utan känns.</p>
+            <div class="cta-group">
+                <a href="#" class="btn-primary">Se mitt arbete</a>
+                <a href="#" class="btn-secondary">Läs mer</a>
             </div>
         </div>
-    </header>
+    </main>
 
-    <section class="grid-section" id="work">
-        <div class="section-header">
-            <h2>Selected Works</h2>
+    <section class="features">
+        <div class="card">
+            <h3>Design</h3>
+            <p>Pixel-perfekt estetik anpassad för din målgrupp.</p>
         </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="image-placeholder"></div>
-                <div class="project-info">
-                    <h3>01. Digital Architecture</h3>
-                    <p>Konceptuell design</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="image-placeholder"></div>
-                <div class="project-info">
-                    <h3>02. Brand Identity</h3>
-                    <p>Visuell strategi</p>
-                </div>
-            </div>
+        <div class="card">
+            <h3>Kod</h3>
+            <p>Ren, snabb och optimerad HTML & CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Strategi</h3>
+            <p>Lösningar som faktiskt konverterar besökare.</p>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 VAULT STUDIO. All rights reserved.</p>
-            <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Enkel fade-in effekt när man scrollar
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
-    </script>
 </body>
 </html>
