@@ -3,99 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mastery Analysis: Thea Study | ARTART01</title>
+    <title>Analys: Thea Study | ARTART01</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="bg-glow"></div>
+    <!-- Bakgrundsdekoration för mer liv -->
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
 
     <nav class="navbar">
-        <div class="logo">THEA<span>ANALYTICS</span></div>
+        <div class="logo">Thea<span>Analytics</span></div>
         <ul class="nav-links">
             <li><a href="#om">Om Verktyget</a></li>
             <li><a href="#teknik">Tekniken Bakom</a></li>
             <li><a href="#ekonomi">Ekonomi & Tokens</a></li>
             <li><a href="#etik">Etik & Framtid</a></li>
-            <li><a href="https://www.theastudy.com/" target="_blank" class="btn-nav">Öppna Thea</a></li>
+            <li><a href="https://www.theastudy.com/" target="_blank" class="btn-nav">Prova nu</a></li>
         </ul>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <span class="badge">Projekt: There is an AI for that</span>
-            <h1>AI som Personlig <span>Studiecoach</span></h1>
-            <p>En djupgående analys av hur Thea Study använder generativ AI för att revolutionera lärande och informationshantering för studenter.</p>
+            <h1>Plugga smartare, <br>inte <span>hårdare.</span></h1>
+            <p>En djupdykning i hur Thea Study revolutionerar lärande genom personlig AI-coachning.</p>
+            <div class="hero-btns">
+                <a href="#om" class="btn-main">Läs analysen</a>
+            </div>
         </div>
     </header>
 
-    <section id="om" class="content-section">
-        <div class="grid-container">
-            <div class="text-block">
-                <h2>Vision och Skapare</h2>
-                <p>Thea Study är framtaget för att möta behovet av personlig handledning i en tid där informationsflödet är enormt. Genom att kombinera avancerade språkmodeller med ett användarvänligt gränssnitt, tillåter verktyget studenter att bygga egna "kunskapsbibliotek" baserat på deras specifika kurslitteratur.</p>
-                
-                <h3>Vem är målgruppen?</h3>
-                <p>Verktyget är optimerat för akademiska studier. Det tjänar inte bara studenten som vill sammanfatta text, utan även forskaren som behöver korrosreferera stora mängder data eller läraren som vill skapa interaktiva övningar till sina elever.</p>
+    <!-- SEKTION: OM VERKTYGET -->
+    <section id="om" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vad är Thea Study?</h2>
+                <div class="line"></div>
             </div>
-            <div class="stat-box">
-                <div class="stat-item"><h3>90%</h3><p>Snabbare sammanfattning[cite: 1]</p></div>
-                <div class="stat-item"><h3>24/7</h3><p>Tillgänglig coach[cite: 1]</p></div>
+            <div class="info-box-main">
+                <p>Thea Study är en AI-plattform som fungerar som en digital studiepartner. Genom att analysera ditt studiematerial kan verktyget skapa skräddarsydda sammanfattningar och övningsfrågor. Syftet är att effektivisera inlärningen och göra komplex information mer lättillgänglig.</p>
+                <p><strong>Målgrupp:</strong> Gymnasie- och universitetsstudenter samt livslånga lärare som behöver strukturera stora mängder data[cite: 1].</p>
             </div>
         </div>
     </section>
 
-    <section id="teknik" class="content-section dark">
-        <div class="text-block">
-            <h2>Tekniken: Hur fungerar det?</h2>
-            <p>Thea Study bygger på så kallad RAG-teknik (Retrieval-Augmented Generation). Det innebär att AI:n inte bara "gissar" nästa ord, utan faktiskt söker igenom de dokument du laddat upp för att ge svar som är förankrade i verkligheten[cite: 1].</p>
-            
-            <div class="info-cards">
-                <div class="info-card">
-                    <h4>Språkmodeller (LLM)</h4>
-                    <p>Använder modeller likt GPT-4 för att förstå mänskligt språk och kontext på en djup nivå[cite: 1].</p>
+    <!-- SEKTION: TEKNIKEN -->
+    <section id="teknik" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tekniken Bakom</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="icon">🤖</div>
+                    <h3>Språkmodeller</h3>
+                    <p>Thea använder LLM-modeller (Large Language Models) för att förstå sammanhang i mänsklig text[cite: 1].</p>
                 </div>
-                <div class="info-card">
-                    <h4>Vektorbaserad sökning</h4>
-                    <p>Gör det möjligt för AI:n att hitta relevanta stycken i en 500-sidig PDF på bråkdelen av en sekund[cite: 1].</p>
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h3>RAG-sökning</h3>
+                    <p>Tekniken letar specifikt i dina uppladdade filer för att undvika faktafel och ge relevanta svar[cite: 1].</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Snabbanalys</h3>
+                    <p>Bearbetar tusentals ord på sekunder för att skapa omedelbara studieplaner[cite: 1].</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ekonomi" class="pricing-section">
-        <h2>Tokens, Kostnad och Tillgång</h2>
-        <p>Att driva kraftfulla AI-modeller kräver enorm datorkraft, vilket förklarar verktygets affärsmodell[cite: 1].</p>
-        <div class="price-grid">
-            <div class="p-card">
-                <h3>Free Tier</h3>
-                <p>Använder enklare modeller med färre tokens per session. Begränsar filstorlek och antal månatliga frågor[cite: 1].</p>
+    <!-- SEKTION: EKONOMI -->
+    <section id="ekonomi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ekonomi & Tokens</h2>
+                <div class="line"></div>
             </div>
-            <div class="p-card featured">
-                <h3>Premium</h3>
-                <p>Ger obegränsad tillgång till "High-Reasoning"-modeller. Inga token-hinder och prioriterad bearbetning av tunga filer[cite: 1].</p>
+            <div class="pricing-container">
+                <div class="price-box">
+                    <h3>Gratis</h3>
+                    <p class="price">0 kr<span>/mån</span></p>
+                    <p>Begränsade tokens per dag. Passar för mindre sammanfattningar[cite: 1].</p>
+                </div>
+                <div class="price-box popular">
+                    <h3>Premium</h3>
+                    <p class="price">Ca 150 kr<span>/mån</span></p>
+                    <p>Obegränsade tokens och tillgång till de mest kraftfulla AI-modellerna[cite: 1].</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="etik" class="content-section">
-        <div class="text-block">
-            <h2>Kritisk Analys: Etik & Framtid</h2>
-            <p>När vi integrerar AI i skolan uppstår viktiga frågor som vi måste adressera enligt kursplanen i ARTART01[cite: 1].</p>
-            
-            <div class="essay-block">
-                <h3>Beroende och Kritiskt tänkande</h3>
-                <p>En risk med verktyg som Thea Study är att studenter slutar analysera källmaterialet själva. Om AI:n sköter all sammanfattning, tränas då studentens förmåga att sålla information? Det är avgörande att se AI som en *assistent*, inte en ersättare för hjärnan[cite: 1].</p>
-
+    <!-- SEKTION: ETIK -->
+    <section id="etik" class="section last-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Etik & Framtid</h2>
+                <div class="line"></div>
+            </div>
+            <div class="essay-card">
+                <h3>Vikten av kritiskt tänkande</h3>
+                <p>När AI tar över sammanfattandet finns en risk att studenter tappar förmågan att analysera källmaterial på djupet[cite: 1]. Det är viktigt att använda Thea som ett stöd, inte en ersättare för eget tänkande[cite: 1].</p>
                 <h3>Akademisk integritet</h3>
-                <p>Var går gränsen mellan studiehjälp och fusk? Thea Study fokuserar på lärande genom quiz och förklaringar, vilket främjar förståelse snarare än att bara skriva färdiga svar åt användaren[cite: 1].</p>
+                <p>Var går gränsen för fusk? Thea fokuserar på förståelse genom quiz, vilket ses som ett pedagogiskt hjälpmedel snarare än ett verktyg för att generera färdiga inlämningar[cite: 1].</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>ARTART01 | Projekt: AI-verktyg | Analys av John Floberg[cite: 1]</p>
+        <p>ARTART01 | AI-Projekt | Analys av John Floberg[cite: 1]</p>
     </footer>
 
 </body>
