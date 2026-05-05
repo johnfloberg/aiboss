@@ -1,94 +1,80 @@
-*{
-    padding:8rem 18%;
+:root{
+
+.btn-primary{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:white;
+}
+
+.btn-secondary{
+    border:1px solid var(--border);
+    color:var(--text);
+}
+
+/* SECTIONS */
+.section{
+    padding:8rem 10%;
+}
+
+.section.alt{
+    background:rgba(255,255,255,0.02);
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
 }
 
 .section h2{
-    font-size:3rem;
+    font-size:2.5rem;
     margin-bottom:2rem;
 }
 
 .section p{
-    color:#94a3b8;
+    color:var(--dim);
     margin-bottom:1.5rem;
 }
 
 /* GRID */
-.grid-section{
+.grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:2rem;
-    padding:6rem 18%;
+    padding:6rem 10%;
 }
 
 .card{
-    background:rgba(255,255,255,0.03);
-    border:1px solid rgba(255,255,255,0.08);
-    padding:2.5rem;
-    border-radius:20px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    padding:2rem;
+    border-radius:18px;
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-12px);
-    border-color:#38bdf8;
+    transform:translateY(-10px);
+    border-color:var(--accent);
 }
 
-/* LIST */
-.feature-list div{
-    padding:1rem;
-    border-left:2px solid #38bdf8;
+.card h3{
+    color:var(--accent);
     margin-bottom:1rem;
 }
 
-/* TIMELINE */
-.step{
-    border-left:2px solid #818cf8;
-    padding-left:1rem;
-    margin-bottom:2rem;
-}
-
-/* PRICING */
-.pricing{
-    padding:6rem 18%;
-    text-align:center;
-}
-
-.pricing-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:2rem;
-    margin-top:3rem;
-}
-
-.price{
-    background:rgba(255,255,255,0.03);
-    padding:2rem;
-    border-radius:20px;
-}
-
-.highlight{
-    border:1px solid #38bdf8;
-    transform:scale(1.05);
+.card p{
+    color:var(--dim);
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:5rem;
-    color:#64748b;
+    padding:4rem;
+    color:var(--dim);
+    border-top:1px solid var(--border);
 }
 
 /* RESPONSIVE */
 @media(max-width:900px){
-    .grid-section,.pricing-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:3.5rem;
-    }
-
-    .section{
-        padding:5rem 10%;
-    }
+    .hero h1{font-size:3.5rem;}
+    .grid{grid-template-columns:1fr;}
+    .nav-links{display:none;}
 }
