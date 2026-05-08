@@ -11,7 +11,7 @@
 
     <nav class="navbar">
         <div class="logo">Thea<em>Analytics</em></div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#om">Om</a></li>
             <li><a href="#funktioner">Funktioner</a></li>
             <li><a href="#teknik">Teknik</a></li>
@@ -19,11 +19,14 @@
             <li><a href="#etik">Etik</a></li>
             <li><a href="https://www.theastudy.com/" target="_blank" class="btn-nav">Prova nu →</a></li>
         </ul>
+        <button class="hamburger" id="hamburger" aria-label="Öppna meny">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-text">
+        <div class="hero-text fade-in">
             <div class="hero-label">ARTART01 — AI-verktyg</div>
             <h1>Plugga <span class="italic">smartare,</span><br>inte hårdare.</h1>
             <p>En djupanalys av Thea Study — den prisbelönta AI-coach som förvandlar kurslitteratur till interaktiv kunskap, dygnet runt.</p>
@@ -31,7 +34,7 @@
                 Besök Thea Study <span class="hero-cta-arrow">→</span>
             </a>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual fade-in fade-in-delay">
             <div class="hero-card">
                 <div class="hero-card-tag">Thea Study — i korthet</div>
                 <blockquote>"You won't just memorize material, you'll master it."</blockquote>
@@ -57,7 +60,7 @@
     <section id="om" class="section">
         <div class="section-inner">
             <div class="om-grid">
-                <div class="om-text">
+                <div class="om-text reveal">
                     <div class="section-eyebrow">Om verktyget</div>
                     <h2 class="section-title">Vad är Thea Study?</h2>
                     <p>Thea Study är en prisbelönt AI-plattform skapad av <strong>Theaai Corporation</strong>, grundat 2023. Verktyget hjälper studenter världen över att studera mer effektivt genom att omvandla kursmaterial till interaktiva övningar.</p>
@@ -66,21 +69,21 @@
                     <div class="info-pill">🎯 Målgrupp: Gymnasie- & universitetsstudenter</div>
                 </div>
                 <div class="om-highlights">
-                    <div class="highlight-row">
+                    <div class="highlight-row reveal">
                         <div class="highlight-num">01</div>
                         <div class="highlight-text">
                             <h4>Ladda upp dina dokument</h4>
                             <p>PDF:er, kompendier och kurslitteratur bearbetas direkt av AI:n på sekunder.</p>
                         </div>
                     </div>
-                    <div class="highlight-row">
+                    <div class="highlight-row reveal">
                         <div class="highlight-num">02</div>
                         <div class="highlight-text">
                             <h4>Välj din studieform</h4>
                             <p>Smart Study, flashcards, sammanfattningar, quiz eller testläge — du väljer.</p>
                         </div>
                     </div>
-                    <div class="highlight-row">
+                    <div class="highlight-row reveal">
                         <div class="highlight-num">03</div>
                         <div class="highlight-text">
                             <h4>Testa din kunskap</h4>
@@ -95,40 +98,40 @@
     <!-- FUNKTIONER -->
     <section id="funktioner" class="section cream-section">
         <div class="section-inner">
-            <div class="section-eyebrow">Vad kan Thea?</div>
-            <h2 class="section-title">Fem kraftfulla funktioner</h2>
+            <div class="section-eyebrow reveal">Vad kan Thea?</div>
+            <h2 class="section-title reveal">Fem kraftfulla funktioner</h2>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="feature-icon">🧠</div>
                     <h3>Smart Study</h3>
                     <p>Forskningsbaserade studiemetoder med active recall och spaced repetition. Thea anpassar frågorna efter vad du redan kan.</p>
                     <div class="feature-tag">Mest populär</div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="feature-icon">📄</div>
                     <h3>Study Guide</h3>
                     <p>Genererar kompletta studieguider på några sekunder från ditt uppladdade material. Ladda ner direkt som PDF.</p>
                     <div class="feature-tag">Tidsbesparare</div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="feature-icon">🃏</div>
                     <h3>Flashcards</h3>
                     <p>Interaktiva flashcards och spel gör repetition roligare. Perfekt för att lära sig termer och begrepp.</p>
                     <div class="feature-tag">På språng</div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="feature-icon">📝</div>
                     <h3>Test</h3>
                     <p>Simulera riktiga provförhållanden. Träna under tentapress och gå in i provsalen med självförtroende.</p>
                     <div class="feature-tag">Provförberedelse</div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <div class="feature-icon">⚡</div>
                     <h3>Summarize</h3>
                     <p>Ladda upp vilken text som helst — Thea sammanfattar den till kärnbudskapet på sekunder.</p>
                     <div class="feature-tag">Snabbast</div>
                 </div>
-                <div class="feature-card award-card">
+                <div class="feature-card award-card reveal">
                     <div class="feature-icon">🏆</div>
                     <h3>Prisbelönt</h3>
                     <p>Vann <strong>2025 World Future Award</strong> i EdTech-kategorin och rankades #3 bästa AI-verktyg på TAAFT 2025.</p>
@@ -141,20 +144,20 @@
     <!-- TEKNIK -->
     <section id="teknik" class="section dark-section">
         <div class="section-inner">
-            <div class="section-eyebrow">Tekniken bakom</div>
-            <h2 class="section-title light">Hur fungerar den<br>intelligenta coachen?</h2>
+            <div class="section-eyebrow reveal">Tekniken bakom</div>
+            <h2 class="section-title light reveal">Hur fungerar den<br>intelligenta coachen?</h2>
             <div class="tech-grid">
-                <div class="tech-cell">
+                <div class="tech-cell reveal">
                     <div class="tech-icon">🧠</div>
                     <h3>Språkmodeller (LLM)</h3>
                     <p>Thea använder stora språkmodeller för att tolka och förstå mänskligt språk på en djup, kontextuell nivå — långt bortom enkel nyckelordssökning.</p>
                 </div>
-                <div class="tech-cell">
+                <div class="tech-cell reveal">
                     <div class="tech-icon">🔍</div>
                     <h3>RAG-sökning</h3>
                     <p>Retrieval-Augmented Generation säkerställer att AI:n svarar baserat på dina egna uppladdade dokument — inte allmän internetkunskap.</p>
                 </div>
-                <div class="tech-cell">
+                <div class="tech-cell reveal">
                     <div class="tech-icon">🔄</div>
                     <h3>Spaced Repetition</h3>
                     <p>Algoritmen anpassar när du får se varje fråga igen baserat på hur väl du svarade — samma metod som professionella minnesmästare använder.</p>
@@ -166,10 +169,10 @@
     <!-- EKONOMI -->
     <section id="ekonomi" class="section">
         <div class="section-inner">
-            <div class="section-eyebrow">Ekonomi & Tokens</div>
-            <h2 class="section-title">Välj din plan</h2>
+            <div class="section-eyebrow reveal">Ekonomi & Tokens</div>
+            <h2 class="section-title reveal">Välj din plan</h2>
             <div class="pricing-wrap">
-                <div class="plan-card">
+                <div class="plan-card reveal">
                     <div class="plan-name">Gratisplan</div>
                     <div class="plan-price"><sup>kr</sup>0</div>
                     <div class="plan-period">per månad, för alltid</div>
@@ -182,7 +185,7 @@
                         <li>Tillgänglig på webb, iOS & Android</li>
                     </ul>
                 </div>
-                <div class="plan-card featured">
+                <div class="plan-card featured reveal">
                     <div class="plan-badge">Rekommenderad</div>
                     <div class="plan-name">Premium</div>
                     <div class="plan-price"><sup>kr</sup>150</div>
@@ -201,6 +204,88 @@
         </div>
     </section>
 
+    <!-- RECENSIONER -->
+    <section id="recensioner" class="section cream-section">
+        <div class="section-inner">
+            <div class="section-eyebrow reveal">Vad säger användarna?</div>
+            <h2 class="section-title reveal">Älskad av miljontals<br>studenter världen över</h2>
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Thea har helt förändrat hur jag studerar. Jag förstår faktiskt det jag läser nu istället för att bara rabbla upp det."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <div class="review-name">Sofia, 19</div>
+                            <div class="review-role">Gymnasieelev, Sverige</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Jag klarade min anatomi-tenta tack vare Thea. Study Guide-funktionen sparade mig bokstavligen dagar av arbete."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <div class="review-name">Marcus, 22</div>
+                            <div class="review-role">Läkarstudent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">"Gratisnivån är lite begränsad, men Premium är värt varje krona. Thea är som att ha en privatlärare tillgänglig hela natten."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">L</div>
+                        <div>
+                            <div class="review-name">Lina, 21</div>
+                            <div class="review-role">Juridikstudent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FÖR & NACKDELAR -->
+    <section id="fordelar" class="section">
+        <div class="section-inner">
+            <div class="section-eyebrow reveal">Analys</div>
+            <h2 class="section-title reveal">För- och nackdelar</h2>
+            <div class="pros-cons-grid">
+                <div class="pros-card reveal">
+                    <div class="pros-cons-header">
+                        <span class="pros-icon">✓</span>
+                        <h3>Fördelar</h3>
+                    </div>
+                    <ul class="pros-cons-list">
+                        <li>Tillgänglig dygnet runt — ingen väntetid på lärare</li>
+                        <li>Sparar enormt med tid jämfört med manuell sammanfattning</li>
+                        <li>Fungerar för alla ämnen — biologi, juridik, historia, matte</li>
+                        <li>Finns på webb, iOS och Android</li>
+                        <li>Gratisnivå tillgänglig — inga krav på betalning för att börja</li>
+                        <li>Forskningsbaserade metoder som spaced repetition och active recall</li>
+                        <li>Prisbelönt och använd av miljontals studenter globalt</li>
+                    </ul>
+                </div>
+                <div class="cons-card reveal">
+                    <div class="pros-cons-header">
+                        <span class="cons-icon">✗</span>
+                        <h3>Nackdelar</h3>
+                    </div>
+                    <ul class="pros-cons-list">
+                        <li>Gratisnivån är ganska begränsad med få tokens per dag</li>
+                        <li>Premium kostar ca 150 kr/mån — kan vara mycket för gymnasieelever</li>
+                        <li>Risk att studenter förlitar sig för mycket på AI-sammanfattningar</li>
+                        <li>Kräver internetuppkoppling — fungerar inte offline</li>
+                        <li>AI kan ibland missa nyanser i komplexa akademiska texter</li>
+                        <li>Inte ett substitut för djup läsning och kritiskt tänkande</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ETIK -->
     <section id="etik" class="section cream-section">
         <div class="section-inner">
@@ -212,17 +297,17 @@
                     <p class="meta-text">Analys av John Floberg<br>ARTART01 – Artificiell intelligens</p>
                 </div>
                 <div class="etik-articles">
-                    <div class="etik-article">
+                    <div class="etik-article reveal">
                         <div class="etik-tag">Kritiskt tänkande</div>
                         <h3>Risken med att delegera förståelse</h3>
                         <p>När AI-verktyg som Thea Study tar över sammanfattandet finns en konkret risk att studenter slutar analysera källmaterialet på djupet. Förmågan att kritiskt granska en text — att ifrågasätta, jämföra och dra egna slutsatser — är en kognitiv muskel som kräver träning.</p>
                     </div>
-                    <div class="etik-article">
+                    <div class="etik-article reveal">
                         <div class="etik-tag">Akademisk integritet</div>
                         <h3>Pedagogik, inte fusk</h3>
                         <p>Thea fokuserar medvetet på förståelse genom quiz och förklaringar snarare än färdiga svar att kopiera. Det positionerar verktyget som ett pedagogiskt hjälpmedel i en gråzon som utbildningssektorn fortfarande navigerar.</p>
                     </div>
-                    <div class="etik-article">
+                    <div class="etik-article reveal">
                         <div class="etik-tag">Framtidsutsikter</div>
                         <h3>Standard i morgondagens klassrum</h3>
                         <p>Thea riktar sig redan idag mot både studenter, lärare och institutioner — en tydlig signal om att verktyget siktar på att bli infrastruktur i utbildningsväsendet, inte bara ett studenthack.</p>
@@ -237,6 +322,38 @@
         <div>ARTART01 · AI-Projekt · Analys av John Floberg</div>
         <div><a href="https://www.theastudy.com/" target="_blank" class="footer-link">theastudy.com ↗</a></div>
     </footer>
+
+    <script>
+        // ── HAMBURGERMENY ──
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            navLinks.classList.toggle('open');
+        });
+
+        // Stäng menyn när man klickar en länk
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // ── SCROLL-ANIMATIONER ──
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
