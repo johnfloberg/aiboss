@@ -360,7 +360,7 @@ body {
     align-items: end;
     margin-bottom: 4rem;
 }
-.funktioner-intro { color: var(--muted); font-size: 1.05rem; line-height: 1.8; align-self: end; }
+.funktioner-intro { color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
 
 .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
@@ -506,7 +506,6 @@ body {
     font-weight: 700; font-size: 1rem;
     flex-shrink: 0;
 }
-
 .review-name { font-weight: 600; font-size: 0.9rem; color: white; }
 .review-role { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
 
@@ -529,8 +528,7 @@ body {
     width: 36px; height: 36px;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-size: 1rem; font-weight: 700;
-    flex-shrink: 0;
+    font-size: 1rem; font-weight: 700; flex-shrink: 0;
 }
 .pros-icon { background: #2d9e5f; color: white; }
 .cons-icon { background: var(--accent); color: white; }
