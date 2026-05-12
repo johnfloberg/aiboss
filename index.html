@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <!-- STOR CITAT-BANNER -->
+    <!-- LÖPANDE BANNER -->
     <div class="quote-banner">
         <div class="quote-banner-inner">
             <span>Trusted by millions</span>
@@ -241,7 +241,7 @@
     <!-- RECENSIONER -->
     <section id="recensioner" class="section accent-section">
         <div class="section-inner">
-            <div class="section-eyebrow reveal" style="color: #f0ddd3;">Vad säger användarna?</div>
+            <div class="section-eyebrow reveal" style="color:#f0ddd3;">Vad säger användarna?</div>
             <h2 class="section-title light reveal">Älskad av miljontals<br>studenter världen över</h2>
             <div class="reviews-grid">
                 <div class="review-card reveal">
@@ -358,6 +358,10 @@
     </footer>
 
     <script>
+        // ── SCROLL-ÅTERSTÄLLNING ──
+        history.scrollRestoration = 'manual';
+        window.scrollTo(0, 0);
+
         // ── HAMBURGERMENY ──
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
@@ -384,7 +388,7 @@
         }, { threshold: 0.1 });
         reveals.forEach(el => observer.observe(el));
 
-        // ── RÄKNEVERK FÖR SIFFROR ──
+        // ── RÄKNEVERK ──
         const counters = document.querySelectorAll('.stat-num[data-target]');
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
