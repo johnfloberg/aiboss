@@ -40,24 +40,8 @@
                 </div>
             </div>
             <div class="hero-visual fade-in fade-in-delay">
-                <div class="hero-card">
-                    <div class="hero-card-tag">Thea Study — i korthet</div>
-                    <blockquote>"You won't just memorize material, you'll master it."</blockquote>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-num" data-target="200">0</span><span class="stat-num">+</span>
-                            <span class="stat-label">Länder</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">24/7</span>
-                            <span class="stat-label">Tillgänglig</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">0 kr</span>
-                            <span class="stat-label">Att börja</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- BILD 1: Inloggningsskärmen — visar hur Thea ser ut när man kommer in -->
+                <img src="bild1.png" alt="Thea Study inloggning" class="hero-screenshot">
             </div>
         </div>
         <div class="hero-diagonal"></div>
@@ -99,20 +83,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- BILD 1: Byt ut src mot din skärmdump av Thea Study startsidan -->
-            <div class="section-img-wrap reveal">
-                <div class="img-placeholder">
-                    <img src="din-bild-1.png" alt="Thea Study gränssnitt">
-                    <!-- Ta bort div.img-placeholder och behåll bara img-taggen när du har en riktig bild -->
-                    <div class="placeholder-overlay">
-                        <span>📸 Lägg till skärmdump här</span>
-                        <small>Byt ut src="din-bild-1.png" mot ditt filnamn</small>
-                    </div>
-                </div>
-                <p class="img-caption">Thea Studys gränssnitt — rent, enkelt och fokuserat på lärande.</p>
-            </div>
-
         </div>
     </section>
 
@@ -138,47 +108,33 @@
         </div>
     </div>
 
-    <!-- SKÄRMDUMP-SEKTION: Tre bilder sida vid sida -->
+    <!-- SKÄRMDUMPAR -->
     <section class="section screenshots-section">
         <div class="section-inner">
             <div class="section-eyebrow reveal">I praktiken</div>
             <h2 class="section-title reveal">Så här ser det ut</h2>
             <div class="screenshots-grid">
 
-                <!-- BILD 2: Byt src mot skärmdump av Smart Study / quiz-funktionen -->
+                <!-- BILD 2: Uppladdning av material -->
                 <div class="screenshot-card reveal">
-                    <div class="img-placeholder">
-                        <img src="din-bild-2.png" alt="Smart Study funktionen">
-                        <div class="placeholder-overlay">
-                            <span>📸 Smart Study</span>
-                            <small>Byt ut src="din-bild-2.png"</small>
-                        </div>
+                    <div class="screenshot-img-wrap">
+                        <img src="bild2.png" alt="Ladda upp material i Thea Study">
                     </div>
-                    <div class="screenshot-label">Smart Study — frågor anpassade efter dig</div>
+                    <div class="screenshot-label">
+                        <strong>Lägg till material</strong>
+                        <span>Ladda upp filer, klistra in en YouTube-länk eller klistra in anteckningar direkt.</span>
+                    </div>
                 </div>
 
-                <!-- BILD 3: Byt src mot skärmdump av Flashcards eller Study Guide -->
+                <!-- BILD 3: Språkval -->
                 <div class="screenshot-card reveal">
-                    <div class="img-placeholder">
-                        <img src="din-bild-3.png" alt="Flashcards funktionen">
-                        <div class="placeholder-overlay">
-                            <span>📸 Flashcards</span>
-                            <small>Byt ut src="din-bild-3.png"</small>
-                        </div>
+                    <div class="screenshot-img-wrap">
+                        <img src="bild3.png" alt="Språkinställningar i Thea Study">
                     </div>
-                    <div class="screenshot-label">Flashcards — interaktiv repetition</div>
-                </div>
-
-                <!-- BILD 4: Byt src mot skärmdump av Summarize eller Test -->
-                <div class="screenshot-card reveal">
-                    <div class="img-placeholder">
-                        <img src="din-bild-4.png" alt="Summarize funktionen">
-                        <div class="placeholder-overlay">
-                            <span>📸 Summarize</span>
-                            <small>Byt ut src="din-bild-4.png"</small>
-                        </div>
+                    <div class="screenshot-label">
+                        <strong>Välj språk</strong>
+                        <span>Thea stöder svenska, engelska och fler språk — AI:n genererar frågor på ditt valda språk.</span>
                     </div>
-                    <div class="screenshot-label">Summarize — sammanfattning på sekunder</div>
                 </div>
 
             </div>
@@ -419,11 +375,9 @@
     </footer>
 
     <script>
-        // ── SCROLL-ÅTERSTÄLLNING ──
         history.scrollRestoration = 'manual';
         window.scrollTo(0, 0);
 
-        // ── HAMBURGERMENY ──
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         hamburger.addEventListener('click', () => {
@@ -437,7 +391,6 @@
             });
         });
 
-        // ── SCROLL-ANIMATIONER ──
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -449,7 +402,6 @@
         }, { threshold: 0.1 });
         reveals.forEach(el => observer.observe(el));
 
-        // ── RÄKNEVERK ──
         const counters = document.querySelectorAll('.stat-num[data-target]');
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
