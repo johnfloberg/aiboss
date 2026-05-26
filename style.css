@@ -234,10 +234,7 @@ body {
     box-shadow: 0 30px 60px rgba(0,0,0,0.35);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.hero-screenshot:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.45);
-}
+.hero-screenshot:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 40px 80px rgba(0,0,0,0.45); }
 
 /* ── LÖPANDE BANNER ── */
 .quote-banner {
@@ -283,39 +280,14 @@ body {
     padding: 1.5rem;
     transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
-.screenshot-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(45,43,107,0.1);
-    border-color: var(--accent);
-}
+.screenshot-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(45,43,107,0.1); border-color: var(--accent); }
 
-.screenshot-img-wrap {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--cream);
-}
-.screenshot-img-wrap img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
+.screenshot-img-wrap { width: 100%; border-radius: 8px; overflow: hidden; background: var(--cream); }
+.screenshot-img-wrap img { width: 100%; height: auto; display: block; border-radius: 8px; transition: transform 0.3s; }
 .screenshot-card:hover .screenshot-img-wrap img { transform: scale(1.02); }
 
-.screenshot-label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    padding: 0 0.5rem;
-}
-.screenshot-label strong {
-    font-family: 'Fraunces', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--ink);
-}
+.screenshot-label { display: flex; flex-direction: column; gap: 0.3rem; padding: 0 0.5rem; }
+.screenshot-label strong { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); }
 .screenshot-label span { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
 
 /* ── DELADE SEKTIONER ── */
@@ -339,9 +311,7 @@ body {
 
 /* ── OM VERKTYGET ── */
 #om { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
 .om-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
-
 .om-text p { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; }
 
 .info-pill {
@@ -379,13 +349,7 @@ body {
 .highlight-text p { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
 /* ── FUNKTIONER ── */
-.funktioner-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: end;
-    margin-bottom: 4rem;
-}
+.funktioner-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
 .funktioner-intro { color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
 
 .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -451,7 +415,6 @@ body {
     transition: transform 0.3s, background 0.3s;
 }
 .tech-cell:hover .tech-icon { transform: scale(1.15) rotate(-5deg); background: rgba(255,255,255,0.25); }
-
 .tech-cell h3 { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.8rem; color: white; }
 .tech-cell p { font-size: 0.92rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
 
@@ -575,6 +538,44 @@ body {
 }
 .analys-text p:last-child { margin-bottom: 0; }
 
+.analys-rekommendation {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-left: 4px solid #a8a4ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.rekommendation-icon {
+    width: 36px; height: 36px;
+    background: #a8a4ff;
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; font-weight: 800;
+    flex-shrink: 0;
+}
+
+.analys-rekommendation strong {
+    display: block;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.analys-rekommendation p {
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 0.92rem !important;
+    line-height: 1.7;
+    margin: 0 !important;
+}
+
 .analys-betyg { position: sticky; top: 8rem; }
 
 .betyg-card {
@@ -591,6 +592,7 @@ body {
     color: rgba(255,255,255,0.45);
     margin-bottom: 1rem;
     font-weight: 600;
+    display: block;
 }
 
 .betyg-num {
@@ -601,6 +603,7 @@ body {
     line-height: 1;
     letter-spacing: -0.04em;
     margin-bottom: 0.5rem;
+    display: block;
 }
 .betyg-num span { font-size: 2rem; color: rgba(255,255,255,0.35); }
 
@@ -611,26 +614,15 @@ body {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: block;
 }
 
 .betyg-rows { display: flex; flex-direction: column; gap: 1.1rem; }
-
 .betyg-row { display: flex; flex-direction: column; gap: 0.4rem; }
+.betyg-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-weight: 500; display: block; }
 
-.betyg-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-weight: 500; }
-
-.betyg-bar {
-    height: 6px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.betyg-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #6b67ff, #a8a4ff);
-    border-radius: 10px;
-}
+.betyg-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; display: block; }
+.betyg-fill { height: 100%; background: linear-gradient(90deg, #6b67ff, #a8a4ff); border-radius: 10px; display: block; }
 
 /* ── ETIK ── */
 .etik-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 6rem; align-items: start; }
@@ -662,6 +654,29 @@ footer {
 .footer-link { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
 .footer-link:hover { color: white; }
 
+/* ── TILLBAKA TILL TOPPEN ── */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px; height: 48px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(45,43,107,0.3);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s, background 0.2s;
+    pointer-events: none;
+    z-index: 99;
+}
+.scroll-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.scroll-top:hover { background: #1e1c55; }
+
 /* ── MOBILANPASSNING ── */
 @media (max-width: 900px) {
     .hamburger { display: flex; }
@@ -689,4 +704,5 @@ footer {
     .tech-grid, .features-grid, .reviews-grid, .screenshots-grid { grid-template-columns: 1fr; }
     .etik-sticky, .analys-betyg { position: static; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
+    .scroll-top { bottom: 1.5rem; right: 1.5rem; }
 }
