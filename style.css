@@ -316,11 +316,7 @@ body {
     font-weight: 700;
     color: var(--ink);
 }
-.screenshot-label span {
-    font-size: 0.88rem;
-    color: var(--muted);
-    line-height: 1.6;
-}
+.screenshot-label span { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
 
 /* ── DELADE SEKTIONER ── */
 .section { padding: 9rem 6%; }
@@ -562,6 +558,80 @@ body {
 .pros-card .pros-cons-list li::before { content: '✓'; color: #2d9e5f; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 .cons-card .pros-cons-list li::before { content: '✗'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
+/* ── MIN ANALYS ── */
+.analys-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    margin-top: 4rem;
+}
+
+.analys-text p {
+    color: rgba(255,255,255,0.65);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+}
+.analys-text p:last-child { margin-bottom: 0; }
+
+.analys-betyg { position: sticky; top: 8rem; }
+
+.betyg-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.betyg-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.betyg-num {
+    font-family: 'Fraunces', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.5rem;
+}
+.betyg-num span { font-size: 2rem; color: rgba(255,255,255,0.35); }
+
+.betyg-stars {
+    font-size: 1.3rem;
+    color: #a8a4ff;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.betyg-rows { display: flex; flex-direction: column; gap: 1.1rem; }
+
+.betyg-row { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.betyg-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-weight: 500; }
+
+.betyg-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.betyg-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6b67ff, #a8a4ff);
+    border-radius: 10px;
+}
+
 /* ── ETIK ── */
 .etik-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 6rem; align-items: start; }
 .etik-sticky { position: sticky; top: 8rem; }
@@ -615,8 +685,8 @@ footer {
     .hero h1 { font-size: clamp(3rem, 10vw, 5rem); }
     .hero-screenshot { max-width: 100%; }
     .funktioner-header { grid-template-columns: 1fr; gap: 1rem; }
-    .om-grid, .etik-grid, .pricing-wrap, .pros-cons-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .om-grid, .etik-grid, .pricing-wrap, .pros-cons-grid, .analys-grid { grid-template-columns: 1fr; gap: 3rem; }
     .tech-grid, .features-grid, .reviews-grid, .screenshots-grid { grid-template-columns: 1fr; }
-    .etik-sticky { position: static; }
+    .etik-sticky, .analys-betyg { position: static; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
 }
