@@ -16,6 +16,7 @@
             <li><a href="#funktioner">Funktioner</a></li>
             <li><a href="#teknik">Teknik</a></li>
             <li><a href="#ekonomi">Priser</a></li>
+            <li><a href="#analys">Analys</a></li>
             <li><a href="#etik">Etik</a></li>
             <li><a href="https://www.theastudy.com/" target="_blank" class="btn-nav">Prova nu →</a></li>
         </ul>
@@ -342,6 +343,13 @@
                     <p>Det känns genuint smart att Thea inte bara sammanfattar texten, utan aktivt testar om jag faktiskt förstår det jag läst. Istället för att passivt läsa igenom anteckningar tvingas jag tänka, vilket enligt forskning är ett mycket effektivare sätt att lära sig.</p>
                     <p>Jag uppskattar också att verktyget finns på svenska och att det anpassar sig efter vilket språk mitt material är på. Det gör att det känns som ett verktyg byggt för mig, inte bara för engelsktalande studenter.</p>
                     <p>Det enda som stör mig lite är att gratisversionen tar slut ganska snabbt om man arbetar med längre dokument. Men för den som verkligen vill ta sina studier på allvar är Premium på ~150 kr i månaden en rimlig investering jämfört med vad en enskild privatlektions timme kostar.</p>
+                    <div class="analys-rekommendation reveal">
+                        <div class="rekommendation-icon">✓</div>
+                        <div>
+                            <strong>Jag rekommenderar Thea Study</strong>
+                            <p>Efter att ha testat verktyget är mitt omdöme klart — Thea är ett av de mest praktiska och effektiva studieverktyg jag provat. Det sparar tid, gör inlärningen roligare och faktiskt fungerar. Oavsett om du är gymnasieelev eller student på högskola är Thea värt att testa.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="analys-betyg reveal">
                     <div class="betyg-card">
@@ -409,6 +417,9 @@
         <div><a href="https://www.theastudy.com/" target="_blank" class="footer-link">theastudy.com ↗</a></div>
     </footer>
 
+    <!-- TILLBAKA TILL TOPPEN -->
+    <button class="scroll-top" id="scrollTop" aria-label="Tillbaka till toppen">↑</button>
+
     <script>
         history.scrollRestoration = 'manual';
         window.scrollTo(0, 0);
@@ -437,6 +448,7 @@
         }, { threshold: 0.1 });
         reveals.forEach(el => observer.observe(el));
 
+        // ── RÄKNEVERK ──
         const counters = document.querySelectorAll('.stat-num[data-target]');
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -455,6 +467,19 @@
             });
         }, { threshold: 0.5 });
         counters.forEach(el => counterObserver.observe(el));
+
+        // ── TILLBAKA TILL TOPPEN ──
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
 
 </body>
